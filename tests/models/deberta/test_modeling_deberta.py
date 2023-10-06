@@ -215,7 +215,7 @@ class DebertaModelTester(object):
 
 @require_torch
 class DebertaModelTest(ModelTesterMixin, PipelineTesterMixin, unittest.TestCase):
-    a = 2
+    a = 3
     all_model_classes = (
         (
             DebertaModel,
@@ -251,6 +251,7 @@ class DebertaModelTest(ModelTesterMixin, PipelineTesterMixin, unittest.TestCase)
         self.config_tester = ConfigTester(self, config_class=DebertaConfig, hidden_size=37)
 
     def test_config(self):
+        assert 1 == 2
         self.config_tester.run_common_tests()
 
     def test_deberta_model(self):
