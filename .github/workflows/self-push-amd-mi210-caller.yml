@@ -21,5 +21,5 @@ jobs:
     if: (cancelled() != true) && ((github.event_name != 'schedule') || ((github.event_name == 'push') && startsWith(github.ref_name, 'run_amd_push_ci_caller')))
     uses: ./.github/workflows/self-push-amd.yml
     with:
-      amd_gpu_type: mi210
+      gpu_flavor: mi210
     secrets: inherit
