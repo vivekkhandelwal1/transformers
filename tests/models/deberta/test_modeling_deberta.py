@@ -215,7 +215,7 @@ class DebertaModelTester(object):
 
 @require_torch
 class DebertaModelTest(ModelTesterMixin, PipelineTesterMixin, unittest.TestCase):
-    a = 1
+    a = 2
     all_model_classes = (
         (
             DebertaModel,
