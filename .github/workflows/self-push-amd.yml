@@ -308,7 +308,7 @@ jobs:
           CI_SLACK_CHANNEL_DUMMY_TESTS: ${{ secrets.CI_SLACK_CHANNEL_DUMMY_TESTS }}
           CI_SLACK_REPORT_CHANNEL_ID: ${{ secrets.CI_SLACK_CHANNEL_ID_AMD }}
           ACCESS_REPO_INFO_TOKEN: ${{ secrets.ACCESS_REPO_INFO_TOKEN }}
-          CI_EVENT: push
+          CI_EVENT: Push CI (AMD) - ${{ inputs.gpu_flavor }}
           CI_TITLE_PUSH: ${{ github.event.head_commit.message }}
           CI_TITLE_WORKFLOW_RUN: ${{ github.event.workflow_run.head_commit.message }}
           CI_SHA: ${{ env.CI_SHA }}
