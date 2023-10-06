@@ -7,7 +7,7 @@ on:
     types: [completed]
   push:
     branches:
-      - run_amd_push_ci_caller*
+      - xxxrun_amd_push_ci_caller*
     paths:
       - "src/**"
       - "tests/**"
